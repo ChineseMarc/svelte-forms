@@ -14,6 +14,7 @@ export function style(
 			}
 		} else {
 			node.classList.remove(dirty);
+      if (field.valid) node.classList.remove(invalid);
 		}
 	});
 
